@@ -1,5 +1,11 @@
 #Codebook describing the variables
 
+##Subject ID
+The ID number assigned to a particular subject who's accelerometer data was collected.
+
+##Activity
+The activity performed by a particular subject.
+
 ##Accelerometer and gyroscope 3-axial raw signals,acceleration signal was then separated into body and gravity acceleration signals. (t) stands for time.
 tBodyAcc-XYZ;
 tGravityAcc-XYZ.
