@@ -42,3 +42,12 @@ colnames(subject_train) <- c("Subject_ID")
 TrainResult <- cbind.data.frame(c(subject_train,trainActivity),X_train)
 #combine the Test and Training data
 combined <- rbind(TestResult,TrainResult)
+#Extracts only the measurements on the mean and standard deviation for each measurement.
+play <- combined[,c("Subject_ID","Activity", grep("mean|std",names(combined),value = T))]
+#creates a new, independent tidy (finaltidy) data set with the average of each variable for each activity 
+#and each subject.
+#
+#Group the Subject and Activity variables
+byID <- play%>%group_by(Subject_ID,Activity)
+#Create the new data set finaltidy
+finaltidy <- byID%>% summarise_each(funs(mean))
