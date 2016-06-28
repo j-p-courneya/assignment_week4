@@ -8,7 +8,7 @@ The goal is to take the test and train data sets and merge them creating one dat
 
 First load the x_test or x_train data
 
-each column of these data sets corresponds to a reading found in the features file. the features are used as the variable names for the test and training data, name the data frame.
+Each column of these data sets corresponds to a reading found in the features file. the features are used as the variable names for the test and training data, name the data frame.
 
 The train and test data sets have values corresponding to a specific subject ID and activity for that subject ID. The subject ID's and activities are found in other files and have to be added to the dataset being built.
 
@@ -20,4 +20,4 @@ At this point the train and test data sets can be merged creating one combined s
 
 From here continue to create the second data set with only the mean and standard deviation of the combined data set.
 
-Name the new tidy data set. 
+Name the new tidy data set.
